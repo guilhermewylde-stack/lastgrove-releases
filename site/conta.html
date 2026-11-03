@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conta · Last Grove</title>
+  <link rel="icon" href="assets/grove-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="conta">
+  <header id="top"></header>
+  <main class="wrap" id="conteudo">
+    <section class="panel" data-needs="guest">
+      <h2>Menu da conta</h2>
+      <p>Entre para ver o perfil, o lado e a frase no portão.</p>
+      <div class="row-actions">
+        <a class="btn" href="entrar.html">Entrar</a>
+        <a class="btn ghost" href="criar.html">Criar conta</a>
+      </div>
+    </section>
+    <div data-needs="session" hidden>
+      <section class="panel">
+        <h2>Conta de <span id="perfil-apelido"></span></h2>
+        <p class="statline">
+          <span>Lado <strong id="perfil-lado"></strong></span>
+          <span>Desde <span id="perfil-desde"></span></span>
+          <span id="perfil-email"></span>
+        </p>
+        <p id="perfil-frase"></p>
+      </section>
+      <div class="cards">
+        <a class="panel" href="perfil.html">
+          <h3>Perfil</h3>
+          <p class="note">Lado e frase no portão. O Apelido não muda: é o mesmo limite da Sala.</p>
+        </a>
+        <a class="panel" href="ranking.html">
+          <h3>Ranking</h3>
+          <p class="note">A sua linha fica em zero até a Partida registrar vitórias.</p>
+        </a>
+        <a class="panel" href="baixar.html">
+          <h3>Baixar o jogo</h3>
+          <p class="note">Instalador 0.1.1 para Windows. O jogo atualiza sozinho ao abrir.</p>
+        </a>
+        <a class="panel" href="mundo.html">
+          <h3>Mundo</h3>
+          <p class="note">Elfo, Troll, Lume, Sombra e o que acaba a Partida.</p>
+        </a>
+      </div>
+      <p class="row-actions gap-top">
+        <button type="button" data-action="sair">Sair</button>
+      </p>
+    </div>
+  </main>
+  <footer id="foot"></footer>
+  <script src="js/portal.js"></script>
+</body>
+</html>

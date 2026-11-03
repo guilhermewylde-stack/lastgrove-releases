@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · Last Grove</title>
+  <link rel="icon" href="assets/grove-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="entrar">
+  <header id="top"></header>
+  <main class="wrap" id="conteudo">
+    <section class="panel" data-needs="guest">
+      <h2>Entrar</h2>
+      <p class="note">Sem servidor ainda. Se a senha sumir, limpe os dados deste site no navegador e crie a conta de novo.</p>
+      <form data-action="entrar">
+        <label>Apelido
+          <input name="apelido" maxlength="16" autocomplete="username" required>
+        </label>
+        <label>Senha
+          <input name="senha" type="password" autocomplete="current-password" required>
+        </label>
+        <p class="error" data-error role="alert"></p>
+        <div class="row-actions">
+          <button type="submit">Entrar</button>
+          <a class="btn ghost" href="criar.html">Criar conta</a>
+        </div>
+      </form>
+    </section>
+    <section class="panel" data-needs="session" hidden>
+      <h2>Sessão aberta</h2>
+      <p>Você já entrou como <strong class="gold" id="perfil-apelido"></strong>.</p>
+      <div class="row-actions">
+        <a class="btn" href="conta.html">Menu da conta</a>
+        <button type="button" data-action="sair">Sair</button>
+      </div>
+    </section>
+  </main>
+  <footer id="foot"></footer>
+  <script src="js/portal.js"></script>
+</body>
+</html>

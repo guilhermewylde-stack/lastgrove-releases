@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta · Last Grove</title>
+  <link rel="icon" href="assets/grove-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="criar">
+  <header id="top"></header>
+  <main class="wrap" id="conteudo">
+    <section class="panel" data-needs="guest">
+      <h2>Criar conta</h2>
+      <p class="note">O Apelido segue a regra da Sala: de 1 a 16 caracteres. Esta conta fica só neste navegador. Ela não entra na Partida e a senha não vai para um servidor.</p>
+      <form data-action="criar">
+        <label>Apelido
+          <input name="apelido" maxlength="16" autocomplete="username" required>
+        </label>
+        <label>E-mail
+          <input name="email" type="email" maxlength="80" autocomplete="email" required>
+        </label>
+        <label>Senha
+          <input name="senha" type="password" minlength="8" autocomplete="new-password" required>
+        </label>
+        <label>Confirmar senha
+          <input name="confirmar" type="password" minlength="8" autocomplete="new-password" required>
+        </label>
+        <p class="note">Lado no playtest</p>
+        <div class="choice">
+          <label><input type="radio" name="lado" value="elfo" checked> Elfo</label>
+          <label><input type="radio" name="lado" value="troll"> Troll</label>
+        </div>
+        <p class="error" data-error role="alert"></p>
+        <div class="row-actions">
+          <button type="submit">Criar conta</button>
+          <a class="btn ghost" href="entrar.html">Já tenho conta</a>
+        </div>
+      </form>
+    </section>
+    <section class="panel" data-needs="session" hidden>
+      <h2>Conta aberta</h2>
+      <p>Você já entrou como <strong class="gold" id="perfil-apelido"></strong>.</p>
+      <a class="btn" href="conta.html">Menu da conta</a>
+    </section>
+  </main>
+  <footer id="foot"></footer>
+  <script src="js/portal.js"></script>
+</body>
+</html>

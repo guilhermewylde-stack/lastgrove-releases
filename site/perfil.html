@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfil · Last Grove</title>
+  <link rel="icon" href="assets/grove-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="perfil">
+  <header id="top"></header>
+  <main class="wrap" id="conteudo">
+    <section class="panel" data-needs="guest">
+      <h2>Perfil</h2>
+      <p>O perfil abre depois de entrar.</p>
+      <a class="btn" href="entrar.html">Entrar</a>
+    </section>
+    <section class="panel" data-needs="session" hidden>
+      <h2>Perfil de <span id="perfil-apelido"></span></h2>
+      <p class="statline">
+        <span>Desde <span id="perfil-desde"></span></span>
+        <span id="perfil-email"></span>
+      </p>
+      <p class="note">Partidas registradas: 0. Vitórias: 0. O placar ainda não sai do jogo.</p>
+      <form data-action="perfil">
+        <p class="note">Lado</p>
+        <div class="choice">
+          <label><input type="radio" name="lado" value="elfo"> Elfo</label>
+          <label><input type="radio" name="lado" value="troll"> Troll</label>
+        </div>
+        <label>Frase no portão
+          <textarea name="frase" id="frase" maxlength="80"></textarea>
+        </label>
+        <p class="error" data-error role="alert"></p>
+        <p class="note" data-saved></p>
+        <div class="row-actions">
+          <button type="submit">Salvar perfil</button>
+          <a class="btn ghost" href="conta.html">Voltar à conta</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer id="foot"></footer>
+  <script src="js/portal.js"></script>
+</body>
+</html>

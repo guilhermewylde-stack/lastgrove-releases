@@ -7,3 +7,6 @@ código fica em outro lugar.
 
 O instalador não tem assinatura digital: quando o Windows mostrar "O Windows protegeu o computador", clique em
 **Mais informações** e depois em **Executar assim mesmo**. Depois de instalado, o jogo se atualiza sozinho ao abrir.
+
+**Portal:** a pasta `site/` é o protótipo de notícias, conta, perfil e ranking. Abra `site/index.html` por um
+servidor local. A conta fica no navegador e não entra na Partida. O placar é de exemplo.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ranking · Last Grove</title>
+  <link rel="icon" href="assets/grove-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="ranking">
+  <header id="top"></header>
+  <main class="wrap" id="conteudo">
+    <section class="panel">
+      <h2>Ranking de exemplo</h2>
+      <p class="note">Vitória de Elfo: Amanhecer ou abate do Troll. Vitória de Troll: todos os Elfos caíram. Estes dez Apelidos não existem no jogo; servem para o formato da tabela até a Partida mandar o placar.</p>
+      <div class="filters">
+        <label>Procurar Apelido
+          <input id="busca" type="search" maxlength="16">
+        </label>
+        <label>Lado
+          <select id="filtro-lado">
+            <option value="">Todos</option>
+            <option value="elfo">Elfo</option>
+            <option value="troll">Troll</option>
+          </select>
+        </label>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Apelido</th>
+            <th>Lado</th>
+            <th>Partidas</th>
+            <th>Vitórias</th>
+          </tr>
+        </thead>
+        <tbody id="placar"></tbody>
+      </table>
+    </section>
+    <section class="panel">
+      <h2>Sua conta</h2>
+      <div id="sua-linha"></div>
+    </section>
+  </main>
+  <footer id="foot"></footer>
+  <script src="js/portal.js"></script>
+</body>
+</html>

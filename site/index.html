@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícias · Last Grove</title>
+  <link rel="icon" href="assets/grove-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="noticias">
+  <header id="top"></header>
+  <main class="wrap" id="conteudo">
+    <div class="grid-home">
+      <div class="stack">
+        <section class="panel" id="login-box">
+          <h2>Entrar</h2>
+          <form data-action="entrar">
+            <label>Apelido
+              <input name="apelido" maxlength="16" autocomplete="username" required>
+            </label>
+            <label>Senha
+              <input name="senha" type="password" autocomplete="current-password" required>
+            </label>
+            <p class="error" data-error></p>
+            <div class="row-actions">
+              <button type="submit">Entrar</button>
+              <a class="btn ghost" href="criar.html">Criar conta</a>
+            </div>
+          </form>
+        </section>
+        <section class="panel">
+          <h2>Playtest</h2>
+          <p>Versão <strong class="gold">0.1.1</strong></p>
+          <p class="note">Windows 10/11, 64 bits. O jogo procura atualização ao abrir. Cada Anfitrião abre a própria Sala.</p>
+          <a class="btn" href="baixar.html">Baixar</a>
+        </section>
+      </div>
+      <div class="stack">
+        <article class="panel" id="noticia-011">
+          <div class="news-meta">
+            <span>31 de outubro de 2026</span>
+            <span>14:12 · Cuiabá</span>
+          </div>
+          <h2>Last Grove 0.1.1</h2>
+          <p>O playtest com amigos está nesta versão. A Partida continua Elfos contra o Troll: Muro, Tocha, Torre, Abrigo, Portão e Fazenda. O Troll compra no Mercado. Elfo em Queda pode virar Lume ou Sombra.</p>
+          <p>Hospedar abre a Sala. Entrar pede o endereço e um Apelido de 1 a 16 caracteres. Quem já instalou recebe a atualização ao abrir o jogo.</p>
+        </article>
+        <article class="panel" id="noticia-010">
+          <div class="news-meta">
+            <span>30 de outubro de 2026</span>
+            <span>18:02 · Cuiabá</span>
+          </div>
+          <h2>Primeiro instalador, 0.1.0</h2>
+          <p>Saiu o primeiro pacote público do playtest. O instalador não tem assinatura digital: quando o Windows mostrar “O Windows protegeu o computador”, clique em Mais informações e depois em Executar assim mesmo.</p>
+        </article>
+      </div>
+      <aside class="panel">
+        <h2>Exemplo</h2>
+        <p class="note">Cinco Apelidos de mentira, só para ver o placar. O jogo ainda não publica vitórias.</p>
+        <ol class="side-list" id="top-cinco"></ol>
+        <p><a href="ranking.html">Ver o ranking</a></p>
+      </aside>
+    </div>
+  </main>
+  <footer id="foot"></footer>
+  <script src="js/portal.js"></script>
+</body>
+</html>
